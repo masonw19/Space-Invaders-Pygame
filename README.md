@@ -23,22 +23,11 @@ to the same row as the spaceship.
 * When an alien gets hit by a laser the users score will increase. When the game ends the users highscore will increase if that rounds score is the users highest score
 * When the game ends a `Play Again` button will appear so that the user can restart the game
 
-## Screenshots
-
-### First Screen
-This is what the screen will look like when first running the program.
-![start showcase](screenshots/spaceinvaders.png)
-
-### Level 2
-Here we are now on level 2 and two aliens have spawned.
-![midgame showcase](screenshots/pic2.png)
-
-### Shooting Laser
-You can see the laser being shot from the users spaceship.
-![lasers showcase](screenshots/shooting.png)
-
-### Game Over
-The aliens have passed the users spaceship so the game is over. 
-![gameover showcase](screenshots/gameover.png)
+## Gameplay
+This is a short gameplay of the first 3 levels. After you clear all the aliens you move up a level and more aliens will spawn.
 
 ![game demo](screenshots/demo.gif)
+
+This is a short gameplay that demonstrates how the game ends and how you can play the game again and your highscore will be updated.
+![gameover demo](screenshots/gameover.gif)
+
