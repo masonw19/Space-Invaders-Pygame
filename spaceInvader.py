@@ -21,8 +21,8 @@ pygame.display.set_icon(icon)
 background = pygame.image.load("imgs/background2.png")
 
 # background sound. we use mixer.music for a background sound
-# mixer.music.load("sounds/background.wav")
-# mixer.music.play(-1) # this will play the .wav file on loop
+mixer.music.load("sounds/bg.wav")
+mixer.music.play(-1) # this will play the .wav file on loop
 
 # load the laser sound
 laserSound = mixer.Sound("sounds/laser.wav")
@@ -163,9 +163,9 @@ def collision(p1X, p1Y, p2X, p2Y):
     return False
 
 # show the score
-def showScore(score):
-    text = font.render("Score: " + str(score), True, (255, 255, 255))
-    screen.blit(text, (10, 10))
+def showScore(score, y, text):
+    text = font.render(text + ": " + str(score), True, (255, 255, 255))
+    screen.blit(text, (10, y))
 
 # game over message
 def gameover():
@@ -173,11 +173,13 @@ def gameover():
     text = font.render("GAME OVER", True, (255, 255, 255))
     screen.blit(text, (180, 200))
     font = pygame.font.Font('freesansbold.ttf', 32)
+    
     return True
     
 #---mainloop---#
 # Score variables
 score = 0
+highscore = 0
 font = pygame.font.Font('freesansbold.ttf', 32)
 # keep track of number of aliens
 numAliens = 1
@@ -206,7 +208,8 @@ while GameLoop:
     GameLoop = checkQuit() 
 
     # show the game score
-    showScore(score) 
+    showScore(score, 10, "Score")
+    showScore(highscore, 40, "Highscore") 
     
     # display the player on the screen and update the position
     spaceship.movePlayer(spaceship.playerX, spaceship.playerY)
@@ -214,7 +217,10 @@ while GameLoop:
     for i in range(len(aliens)):
         aliens[i].moveAlien(aliens[i].alienX, aliens[i].alienY)
         if aliens[i].alienY > 470:
+            if score > highscore:
+                highscore = score
             gg = gameover()
+            pygame.mixer.music.pause()
         if collision(aliens[i].alienX, aliens[i].alienY, laser.laserX, laser.laserY):
             laser.ready = True
             laser.shootLaser()  # update the laser
@@ -240,6 +246,7 @@ while GameLoop:
         aliens = list()
         alienVel = 1.5
         aliens.append(alien(random.randint(0, 800-64), random.randint(50, 150), alienVel))
+        pygame.mixer.music.unpause()
         del playAgain
         playAgain = button(285, 300, "Play Again")
         

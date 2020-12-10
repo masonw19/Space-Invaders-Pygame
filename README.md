@@ -26,7 +26,7 @@ to the same row as the spaceship.
 ## Screenshots
 
 ### First Screen
-This is what the screen will look like when first running the program
+This is what the screen will look like when first running the program.
 ![start showcase](screenshots/spaceinvaders.png)
 
 ### Level 2
