@@ -25,12 +25,15 @@ to the same row as the spaceship.
 
 ## Screenshots
 
-# First Screen
+### First Screen
 This is what the screen will look like when first running the program
 ![start showcase](screenshots/spaceinvaders.png)
 
+### Level 2
 ![midgame showcase](screenshots/pic2.png)
 
+### Shooting Laser
 ![lasers showcase](screenshots/shooting.png)
 
+### Game Over
 ![gameover showcase](screenshots/gameover.png)
