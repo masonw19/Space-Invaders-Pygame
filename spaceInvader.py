@@ -13,7 +13,7 @@ clicked = False
 screen = pygame.display.set_mode((800, 600))
 
 # Set the window caption and icon
-pygame.display.set_caption("Space Invader") 
+pygame.display.set_caption("Space Invaders") 
 icon = pygame.image.load('imgs/rocket.png')
 pygame.display.set_icon(icon)
 
