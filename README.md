@@ -12,7 +12,8 @@ This is an implementation of the popular Atari and NES Space Invaders arcade gam
 
 ## Concept
 My implementation of the Space Invaders game holds the same concepts as the original game. For example, the player spaceship shoots the aliens
-and when the lasers hit the aliens the user will gain points and level up which increases the game difficulty.
+and when the lasers hit the aliens the user will gain points and level up which increases the game difficulty. The game ends once the aliens gets
+to the same row as the spaceship.
 
 ## Features 
 * The player can be moved _left_ or _right_ using the `A` and `D` keys, respectively
@@ -29,5 +30,7 @@ This is what the screen will look like when first running the program
 ![start showcase](screenshots/spaceinvaders.png)
 
 ![midgame showcase](screenshots/pic2.png)
+
+![lasers showcase](screenshots/shooting.png)
 
 ![gameover showcase](screenshots/gameover.png)
