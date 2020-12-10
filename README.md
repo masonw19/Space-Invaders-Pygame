@@ -11,7 +11,7 @@ This is an implementation of the popular Atari and NES Space Invaders arcade gam
 5. Use the following command in command prompt to begin the game: `python spaceInvader.py`
 
 ## Concept
-My implementation of the Space Invaders game holds the same concepts as the original game. For example, the player spaceship shoots the aliens
+My implementation of the Space Invaders game holds similar concepts to the original game. For example, the player spaceship shoots the aliens
 and when the lasers hit the aliens the user will gain points and level up which increases the game difficulty. The game ends once the aliens gets
 to the same row as the spaceship.
 
@@ -30,10 +30,13 @@ This is what the screen will look like when first running the program
 ![start showcase](screenshots/spaceinvaders.png)
 
 ### Level 2
+Here we are now on level 2 and two aliens have spawned.
 ![midgame showcase](screenshots/pic2.png)
 
 ### Shooting Laser
+You can see the laser being shot from the users spaceship.
 ![lasers showcase](screenshots/shooting.png)
 
 ### Game Over
+The aliens have passed the users spaceship so the game is over. 
 ![gameover showcase](screenshots/gameover.png)
