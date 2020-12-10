@@ -29,5 +29,6 @@ This is a short gameplay of the first 3 levels. After you clear all the aliens y
 ![game demo](screenshots/demo.gif)
 
 This is a short gameplay that demonstrates how the game ends and how you can play the game again and your highscore will be updated.
+
 ![gameover demo](screenshots/gameover.gif)
 
