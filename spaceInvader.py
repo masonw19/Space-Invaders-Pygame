@@ -79,8 +79,6 @@ class alien(object):
         screen.blit(alienImg, (x, y))
         self.alienX = x
         self.alienY = y
-    def __del__(self):
-        print("alien deleted")
 
 # laser
 laserImg = pygame.image.load("imgs/laser.png")
@@ -108,18 +106,18 @@ class laser(object):
 
 # button class for when the game is over
 class button(object):
-    button_col = (25, 190, 255)
-    hover_col = (75, 225, 255)
-    click_col = (50, 150, 255)
-    text_col = (255, 255, 255)
-    width = 200
-    height = 40
+    button_col = (25, 190, 255)     # button colour
+    hover_col = (75, 225, 255)      # hover button colour
+    click_col = (50, 150, 255)      # click button colour   
+    text_col = (255, 255, 255)      # text colour
+    width = 200     # button width
+    height = 40     # button height
     def __init__(self, x, y, text):
-        self.posx = x
-        self.posy = y
-        self.text = text
+        self.posx = x       # button x pos attribute
+        self.posy = y       # button y pos attribute
+        self.text = text    # button text attribute
     def draw(self):
-        global clicked
+        global clicked      # check if the button is clicked
         action = False
         pos = pygame.mouse.get_pos()
         button_rect = Rect(self.posx, self.posy, self.width, self.height)
@@ -225,12 +223,10 @@ while GameLoop:
             laser.ready = True
             laser.shootLaser()  # update the laser
             score+=100
-            print(score)
             if len(aliens) > 0:
                 hit.append(i)   # build our list of aliens we have hit
     for i in hit:               # loop through our list of hits so we can remove those aliens. 
         aliens.remove(aliens[i])
-        print(len(aliens))
     hit = list()
     if len(aliens) <= 0:
         numAliens += 1
