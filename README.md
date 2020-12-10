@@ -10,9 +10,20 @@ This is an implementation of the popular Atari and NES Space Invaders arcade gam
 4. Use the following command in command prompt to install _Pygame_: `pip install pygame`
 5. Use the following command in command prompt to begin the game: `python spaceInvader.py`
 
+## Concept
+
+
 ## Features 
 * The player can be moved _left_ or _right_ using the `A` and `D` keys, respectively
 * The player can shoot the aliens by using the `right click` on a mouse
 * After the player has cleared all the all the aliens, the user levels up and the number of aliens will increase by 1 and aliens speed will increase as well
 * The game has sound effects for when the user shoots and when a laser hits an alien
+* When an alien gets hit by a laser the users score will increase. When the game ends the users highscore will increase if that rounds score is the users highest score
 * When the game ends a `Play Again` button will appear so that the user can restart the game
+
+## Screenshots
+![start showcase](screenshots/spaceinvaders.png)
+
+![midgame showcase](screenshots/pic2.png)
+
+![gameover showcase](screenshots/gameover.png)
