@@ -41,4 +41,4 @@ You can see the laser being shot from the users spaceship.
 The aliens have passed the users spaceship so the game is over. 
 ![gameover showcase](screenshots/gameover.png)
 
-<div style="width:260px;max-width:100%;"><div style="height:0;padding-bottom:78.85%;position:relative;"><iframe width="260" height="205" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameBorder="0" src="https://imgflip.com/embed/4puory"></iframe></div><p><a href="https://imgflip.com/gif/4puory">via Imgflip</a></p></div>
+![game demo](screenshots/demo.gif)
